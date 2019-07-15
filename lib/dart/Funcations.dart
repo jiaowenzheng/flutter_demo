@@ -53,6 +53,7 @@ class TestFly extends AbstractClass{
 
 
 class Logger{
+  
   final String name;
   bool mute = false;
   int increment = 1;
