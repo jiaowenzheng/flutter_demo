@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
+      print(' setState .....');
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
@@ -58,7 +59,44 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print(' initState .....');
+  }
+
+  @override
+  void didUpdateWidget(MyHomePage oldWidget) {
+    // TODO: implement didUpdateWidget
+    super.didUpdateWidget(oldWidget);
+    print('didUpdateWidget');
+  }
+
+  @override
+  void deactivate() {
+    // TODO: implement deactivate
+    super.deactivate();
+    print('deactivate');
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    print('dispose');
+  }
+
+  @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+    print('didChangeDependencies');
+  }
+
+
+  @override
   Widget build(BuildContext context) {
+    print('build');
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
